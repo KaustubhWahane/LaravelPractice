@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// This means a default method
+Route::any('/', function () {
+    echo "Hello there any page";
+});
