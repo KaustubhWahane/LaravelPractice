@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::any('/', function () {
     echo "Hello there any page";
 });
+
+Route::get('/demo/{name}', function ($name) {
+   echo $name;
+});
